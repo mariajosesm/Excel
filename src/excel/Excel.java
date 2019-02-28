@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package excel;
 
 import java.util.Scanner;
 
@@ -17,13 +16,9 @@ public class Excel {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner pedir=new Scanner(System.in);
-        
-         System.out.println("Ingrese columnas:");
-        int num=pedir.nextInt();
-        
-        
-        String [] columnNames = generar(num);
+
+       
+        String [] columnNames = generar(350);
         for (String columnName : columnNames){
         System.out.print(columnName + " ");
         }
